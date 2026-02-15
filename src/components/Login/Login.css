@@ -1,0 +1,83 @@
+
+
+
+.login-container {
+   
+    padding-top: 76px; 
+    min-height: 100vh;
+    
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    
+    padding-bottom: 50px; 
+}
+
+/* --- 2. Login Card Styling  --- */
+.login-card {
+    background: var(--muted); 
+    color: var(--dark);      
+    
+    border-radius: 18px; 
+    padding: 40px;
+    width: 100%;
+    max-width: 400px; 
+    
+   
+    box-shadow: 0 10px 40px rgba(0,0,0,0.35); 
+}
+
+.login-title {
+    color: var(--dark);
+    font-weight: 800;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* --- 3. Input Fields Styling --- */
+.form-label-custom {
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+.form-control-custom {
+    /* Rounded input fields */
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 999px; /* Fully rounded */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control-custom:focus {
+    outline: none;
+    border-color: var(--accent-2); 
+    box-shadow: 0 0 0 3px rgba(239, 71, 111, 0.2); 
+}
+
+/* --- 4. Login Button (Gradient) --- */
+.login-btn-custom {
+    background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+    color: var(--dark);
+    border-radius: 999px; /* Pill shape */
+    font-weight: 700;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 30px rgba(239,71,111,0.25);
+    transition: transform .3s, box-shadow .3s;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+.login-btn-custom:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(239,71,111,0.4);
+}

@@ -1,0 +1,77 @@
+/* src/pages/ServicesPage.css */
+
+.services-page-container {
+    padding: 80px 20px 40px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-title {
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-name {
+    color: var(--accent-1);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.service-description {
+    color: #555;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.service-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.service-price {
+    font-weight: 700;
+    color: var(--dark);
+    font-size: 1.2rem;
+}
+
+.book-btn {
+    background: var(--accent-2);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.book-btn:hover {
+    background: #d43714; 
+}

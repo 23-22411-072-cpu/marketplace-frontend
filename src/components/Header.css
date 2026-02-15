@@ -1,0 +1,78 @@
+/* --- Root Variables (Agar aap globally define nahi kar rahi hain) --- */
+:root {
+    --accent-1: #FF6B81; /* Pink */
+    --accent-2: #E84118; /* Orange-Red (Gradient End) */
+    --dark: #1E293B; /* Dark Blue/Slate */
+    --muted: #f8f9fa; /* Light color for text/icons */
+}
+
+.header-nav {
+    background: rgba(20,33,61,0.9) !important; 
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(6px);
+    transition: all .4s ease;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    padding: 0.5rem 1rem;
+}
+
+/* --- Brand/Logo Styling --- */
+.navbar-brand-custom {
+    color: var(--accent-1) !important;  
+    font-weight: 800;
+    letter-spacing: .5px;
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    font-size: 1.5rem; 
+    text-decoration: none;
+    transition: all .35s ease;
+}
+
+/* --- Nav Links --- */
+.nav-link-custom {
+    /* Home, Services, Dashboard, Login, Register style */
+    color: rgba(255,255,255,0.9) !important; 
+    font-weight: 600;
+    transition: color .25s, border-bottom .25s; 
+    font-size: 1.05rem;
+    padding: 5px 0; /* Padding for hover line */
+    margin: 0 15px;  
+    border-bottom: 2px solid transparent; /* Default transparent line */
+    text-decoration: none;
+}
+
+.nav-link-custom:hover {
+    color: var(--accent-2) !important;  
+    border-bottom: 2px solid var(--accent-2) !important; 
+   
+}
+
+/* --- AUTH ACTIONS CONTAINER --- */
+.auth-actions {
+    display: flex;
+    align-items: center;
+   
+}
+
+/* --- Custom Logout Button  */
+.logout-btn-custom {
+    background: var(--accent-2) !important; 
+    color: var(--muted) !important; 
+    border-radius: 999px !important;
+    font-weight: 700 !important;
+    padding: .5rem 1.15rem !important;
+    border: none !important;
+    margin-left: 1rem;
+    transition: transform .28s ease, box-shadow .28s !important;
+}
+.logout-btn-custom:hover {
+    transform: translateY(-4px) scale(1.02) !important;
+    background: #c53051 !important;
+} 
+
+/* --- Welcome Text Styling --- */
+.welcome-text-custom {
+    color: var(--muted) !important;
+    font-weight: 600;
+    margin-right: 15px;
+}

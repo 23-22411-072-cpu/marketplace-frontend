@@ -1,0 +1,90 @@
+/* src/components/Signup/Signup.css */
+
+.signup-container {
+    /* Flexbox setup to center the form */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: flex-start; 
+    padding-top: 100px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    background-color: #f4f7f6; 
+    width: 100%; /* Ensure it spans full width */
+}
+
+.signup-form {
+    background: #ffffff;
+    padding: 35px 40px; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Shadow for 3D effect */
+    width: 100%;
+    max-width: 450px; 
+    text-align: center;
+    margin-top: 20px; /* Top margin for slight visual break */
+}
+
+.signup-form h2 {
+    /* Professional Heading */
+    margin-bottom: 25px;
+    color: #1E293B; 
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.signup-form input,
+.signup-form select {
+    width: 100%;
+    padding: 12px 15px; 
+    margin-bottom: 15px;
+    border: 1px solid #dcdcdc; 
+    border-radius: 8px; 
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+    border-color: #007bff; 
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.signup-form button {
+    width: 100%;
+    background-color: #007bff; 
+    color: white;
+    padding: 14px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.signup-form button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #555;
+}
+
+.login-link span {
+    color: #dc3545;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login-link span:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
