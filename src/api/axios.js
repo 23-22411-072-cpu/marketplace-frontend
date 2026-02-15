@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://127.0.0.1:8000/api', 
+  baseURL: 'https://skillhub-backend-production.up.railway.app', 
   withCredentials: false, 
   headers: {
     'Content-Type': 'application/json',
@@ -24,5 +24,6 @@ api.interceptors.request.use(
     return Promise.reject(error);
   }
 );
+
 
 export default api;
